@@ -2,11 +2,12 @@
 
 <h1 align="center">SuperZip</h1>
 
-<p align="center">免费的 Mac 压缩工具，面向 Apple Silicon。</p>
+<p align="center">免费的极速压缩工具。</p>
 
 <p align="center">
   <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build46"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
+  <a href="#下载"><img src="assets/badges/windows.svg" alt="Windows · 尚未发布"></a>
   <a href="RELEASE-NOTES.md"><img src="assets/badges/status.svg" alt="Beta"></a>
 </p>
 
@@ -20,7 +21,7 @@
   <a href="https://github.com/NanLany/SuperZip/issues">问题反馈</a>
 </p>
 
-SuperZip 创建 `.szp` 压缩包，也能解压 ZIP、7z 和 RAR。处理表格时，默认尝试专用优化；普通文件沿用常规压缩。你可以直接使用默认设置，也可以关闭“自动优化表格”。
+SuperZip 创建 `.szp` 压缩包，也能解压 ZIP、7z 和 RAR。默认按文件内容识别适用表格并尝试优化，其余文件使用普通压缩；可关闭“自动优化表格”。
 
 本仓库用于发布下载、维护文档和收集问题反馈。SuperZip 自有核心与界面闭源。
 
@@ -30,14 +31,14 @@ SuperZip 创建 `.szp` 压缩包，也能解压 ZIP、7z 和 RAR。处理表格�
 
 | 平台 | 当前状态 | 下载 |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build46 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · ZIP 约 5.22 MB |
+| macOS · Apple Silicon | v0.4.3 · Build46 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
 | Windows | 预计约一周后上线 | 准备中 |
 
 macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 macOS 12，当前实测环境为 Apple M1、8 GB、macOS 26.2；较旧系统尚未逐版本验证。
 
 ## 安装
 
-1. 在 [Releases](https://github.com/NanLany/SuperZip/releases) 下载 macOS ZIP，解压后将完整的 `SuperZip.app` 拖到“应用程序”。
+1. 在 [Releases](https://github.com/NanLany/SuperZip/releases) 下载 macOS DMG，打开后将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载 ZIP，解压后将完整的应用拖到“应用程序”。
 2. 首次打开若提示 Apple 无法验证，点“完成”。
 3. 打开 **系统设置 → 隐私与安全性 → 安全性 → 仍要打开**，按系统提示确认。
 
@@ -64,9 +65,9 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数。耗时包含文件扫描与自动判断；文件内容不同，压缩收益也会不同。
 
-[下载完整性能实测 HTML](https://github.com/NanLany/SuperZip/releases/download/untagged-2938ca12b4c26e0c9e86/SuperZip-0.4.3-benchmarks.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
+[下载数据预览（HTML）](https://github.com/NanLany/SuperZip/releases/download/untagged-5d8c02b10cfb82c8eac1/data-preview.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
 
-下载 `SuperZip-0.4.3-benchmarks.html` 后，用 Safari、Chrome 或其他浏览器打开即可，无需联网。若双击打开了编辑器，请右键 → 打开方式 → 选择浏览器。仓库公开后，会提供直接浏览的在线页面。
+下载 `data-preview.html` 后，用 Safari、Chrome 或其他浏览器打开即可，无需联网。若双击打开了编辑器，请右键 → 打开方式 → 选择浏览器。仓库公开后，会提供直接浏览的在线页面。
 
 ## 使用前了解
 
@@ -76,7 +77,7 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 ## 反馈
 
-遇到问题，欢迎在 [Issues](https://github.com/NanLany/SuperZip/issues) 留下版本号、Mac 芯片、macOS 版本、操作步骤和错误文字。如果能提供一个小的复现样本，会更容易定位问题；请先移除个人信息和密码。
+如遇问题，请在 [Issues](https://github.com/NanLany/SuperZip/issues) 附上应用版本、操作系统版本、硬件型号、复现步骤和错误信息。一个不含个人信息或密码的小样本，会更方便我们定位问题。
 
 ## 技术与许可
 

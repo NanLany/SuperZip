@@ -2,11 +2,12 @@
 
 <h1 align="center">SuperZip</h1>
 
-<p align="center">A free Mac compression utility for Apple Silicon.</p>
+<p align="center">A free, fast compression tool.</p>
 
 <p align="center">
   <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build46"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
+  <a href="#download"><img src="assets/badges/windows.svg" alt="Windows · Not released"></a>
   <a href="RELEASE-NOTES.md#english"><img src="assets/badges/status.svg" alt="Beta"></a>
 </p>
 
@@ -20,7 +21,7 @@
   <a href="https://github.com/NanLany/SuperZip/issues">Report an issue</a>
 </p>
 
-SuperZip creates `.szp` archives and extracts ZIP, 7z, and RAR. It tries specialized compression for eligible table files by default and uses regular compression for other files. You can keep the defaults or turn off “Auto-optimize tables”.
+SuperZip creates `.szp` archives and extracts ZIP, 7z, and RAR. Automatic table optimization is enabled by default and can be turned off. Other files use regular compression.
 
 This repository provides downloads, documentation, and issue tracking. SuperZip's own core and interface are closed source.
 
@@ -30,14 +31,14 @@ This repository provides downloads, documentation, and issue tracking. SuperZip'
 
 | Platform | Status | Download |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build46 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · ZIP, about 5.22 MB |
+| macOS · Apple Silicon | v0.4.3 · Build46 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
 | Windows | Expected in about a week | In preparation |
 
 The macOS build is for M-series Macs; Intel Macs are not supported. Its deployment target is macOS 12. Testing so far uses an Apple M1 with 8 GB of RAM on macOS 26.2; older macOS releases have not been individually verified.
 
 ## Installation
 
-1. Download the macOS ZIP from [Releases](https://github.com/NanLany/SuperZip/releases), extract it, and move the complete `SuperZip.app` to Applications.
+1. Download the macOS DMG from [Releases](https://github.com/NanLany/SuperZip/releases), open it, and drag `SuperZip.app` to Applications in the window. Alternatively, download the ZIP, extract it, and move the complete app to Applications.
 2. If macOS says Apple cannot verify the app, dismiss the dialog with “Done”.
 3. Go to **System Settings → Privacy & Security → Security → Open Anyway** and follow the prompts.
 
@@ -64,9 +65,9 @@ SuperZip's default mode on an everyday project folder containing **4.147 GB acro
 
 These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files.
 
-[Download the full benchmark HTML](https://github.com/NanLany/SuperZip/releases/download/untagged-2938ca12b4c26e0c9e86/SuperZip-0.4.3-benchmarks.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
+[Download data preview (HTML)](https://github.com/NanLany/SuperZip/releases/download/untagged-5d8c02b10cfb82c8eac1/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
 
-Open the downloaded `SuperZip-0.4.3-benchmarks.html` in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
+Open the downloaded `data-preview.html` in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
 
 ## Before using
 
@@ -76,7 +77,7 @@ Open the downloaded `SuperZip-0.4.3-benchmarks.html` in Safari, Chrome, or anoth
 
 ## Feedback
 
-If something goes wrong, please open an [issue](https://github.com/NanLany/SuperZip/issues) with the app version, Mac chip, macOS version, steps to reproduce, and error text. A small sample helps us investigate; remove personal information and passwords first.
+To report a problem, open an [issue](https://github.com/NanLany/SuperZip/issues) with the app version, operating system version, hardware model, steps to reproduce, and error text. A small sample helps us investigate; remove personal information and passwords before attaching it.
 
 ## Technology and licensing
 

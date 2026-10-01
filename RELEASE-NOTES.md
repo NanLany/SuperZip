@@ -4,7 +4,7 @@
 
 ## 简体中文
 
-SuperZip 是面向 M 系列 Mac 的轻量原生压缩工具。这是一份早期测试版，请保留原文件。
+这是 SuperZip v0.4.3 / Build46 的 macOS 测试版，适用于 Apple Silicon。请保留原文件。
 
 ### 功能
 
@@ -16,9 +16,9 @@ SuperZip 是面向 M 系列 Mac 的轻量原生压缩工具。这是一份早期
 
 ### 安装与首次打开
 
-仅提供 **Apple Silicon（M 系列）**版本。构建最低系统目标为 **macOS 12**；当前实测环境为 **Apple M1、8 GB、macOS 26.2**，较旧系统尚未逐版本验收。Intel Mac 暂不支持。Windows 测试版预计约一周后上线，发布前会完成 Windows 实机验证；本次发行仅提供 macOS 版本。
+仅提供 **Apple Silicon（M 系列）** 版本。构建最低系统目标为 **macOS 12**；当前实测环境为 **Apple M1、8 GB、macOS 26.2**，较旧系统尚未逐版本验收。Intel Mac 暂不支持。Windows 测试版预计约一周后上线，发布前会完成 Windows 实机验证；本次发行仅提供 macOS 版本。
 
-下载并解开 `SuperZip-0.4.3-build46-macOS-arm64.zip`，将完整的 `SuperZip.app` 移到“应用程序”文件夹。不要只复制应用内部的文件。
+打开 `SuperZip-0.4.3-build46-macOS-arm64.dmg`，将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载并解开同名 ZIP，将完整的应用移到“应用程序”。不要只复制应用内部的文件。
 
 本测试版使用本地签名，**尚未通过 Apple 公证**。确认下载来自本项目后，若首次打开提示 Apple 无法验证：
 
@@ -42,7 +42,7 @@ SuperZip 自有核心、压缩策略与界面保持闭源。7-Zip 26.03 的完�
 
 ## English
 
-SuperZip is a native compression utility for M-series Macs. This is an early beta; keep your original files.
+This is the macOS beta of SuperZip v0.4.3 / Build46 for Apple Silicon. Keep your original files.
 
 The Windows beta is expected in about a week, after testing on Windows hardware. This release only includes the macOS build.
 
@@ -58,7 +58,7 @@ The Windows beta is expected in about a week, after testing on Windows hardware.
 
 This build is for **Apple Silicon (M-series)** Macs. The deployment target is **macOS 12**. Testing so far uses an **Apple M1 with 8 GB of RAM on macOS 26.2**; older macOS versions have not been individually verified. Intel Macs are not supported.
 
-Extract `SuperZip-0.4.3-build46-macOS-arm64.zip` and move the complete `SuperZip.app` to Applications. Do not copy only the files inside the app bundle.
+Open `SuperZip-0.4.3-build46-macOS-arm64.dmg` and drag `SuperZip.app` to Applications in the window. You can also extract the ZIP with the same name and move the complete app to Applications. Do not copy only the files inside the app bundle.
 
 This beta is locally signed and **has not been notarized by Apple**. After confirming that the download came from this project, if macOS says Apple cannot verify it:
 
