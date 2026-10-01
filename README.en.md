@@ -64,9 +64,9 @@ SuperZip's default mode on an everyday project folder containing **4.147 GB acro
 
 These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files.
 
-[Download the full benchmark HTML](https://github.com/NanLany/SuperZip/raw/refs/heads/main/docs/benchmarks.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
+[Download the full benchmark HTML](https://github.com/NanLany/SuperZip/releases/download/untagged-2938ca12b4c26e0c9e86/SuperZip-0.4.3-benchmarks.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
 
-Open the downloaded `benchmarks.html` in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
+Open the downloaded `SuperZip-0.4.3-benchmarks.html` in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
 
 ## Before using
 

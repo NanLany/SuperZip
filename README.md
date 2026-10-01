@@ -64,9 +64,9 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数。耗时包含文件扫描与自动判断；文件内容不同，压缩收益也会不同。
 
-[下载完整性能实测 HTML](https://github.com/NanLany/SuperZip/raw/refs/heads/main/docs/benchmarks.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
+[下载完整性能实测 HTML](https://github.com/NanLany/SuperZip/releases/download/untagged-2938ca12b4c26e0c9e86/SuperZip-0.4.3-benchmarks.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
 
-下载 `benchmarks.html` 后，用 Safari、Chrome 或其他浏览器打开即可，无需联网。若双击打开了编辑器，请右键 → 打开方式 → 选择浏览器。仓库公开后，会提供直接浏览的在线页面。
+下载 `SuperZip-0.4.3-benchmarks.html` 后，用 Safari、Chrome 或其他浏览器打开即可，无需联网。若双击打开了编辑器，请右键 → 打开方式 → 选择浏览器。仓库公开后，会提供直接浏览的在线页面。
 
 ## 使用前了解
 
