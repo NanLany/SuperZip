@@ -12,7 +12,7 @@
   &nbsp; · &nbsp;
   <a href="#安装只需几步">安装说明</a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/NanLany/SuperZip/blob/main/docs/benchmarks.html">性能实测</a>
+  <a href="https://github.com/NanLany/SuperZip/blob/main/docs/benchmarks.html">性能实测（HTML）</a>
   &nbsp; · &nbsp;
   <a href="https://github.com/NanLany/SuperZip/issues">反馈问题</a>
 </p>
@@ -46,7 +46,7 @@
 
 以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数，耗时包含文件扫描和自动判断。实际收益随文件内容变化。[28 组数据与常用软件的默认模式对比 →](https://github.com/NanLany/SuperZip/blob/main/docs/benchmarks.html)
 
-仓库中的性能页面为独立 HTML。私有预览阶段可下载后直接打开；正式公开时提供网页浏览入口。
+性能页面是独立 HTML；GitHub 文件页不直接运行图表，请下载后打开。正式公开时再提供网页浏览入口。
 
 ## 安装只需几步
 
