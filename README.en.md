@@ -1,5 +1,7 @@
 <p align="center"><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
+<p align="center"><img src="assets/mark.svg" width="88" height="88" alt="SuperZip"></p>
+
 <h1 align="center">SuperZip</h1>
 
 <p align="center">A free, fast compression tool.</p>

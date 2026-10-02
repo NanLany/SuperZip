@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-<rect x="2" y="2" width="124" height="124" rx="30" fill="#2855d9"/>
-<path d="M86 32H51c-11 0-19 8-19 18s8 18 19 18h26c10 0 17 7 17 16s-7 16-17 16H39" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">SuperZip · 刃流应用图标</title>
+  <rect x="32" y="32" width="448" height="448" rx="106" fill="#2855d9"/>
+  <path d="M408 104C277 106 183 152 142 228H250L104 402C237 400 332 354 374 278H264Z" fill="#fff"/>
 </svg>
