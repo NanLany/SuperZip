@@ -1,10 +1,14 @@
 <p><a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
 
-# SuperZip v0.4.3 · Build46
+# SuperZip v0.4.3 · Build47
 
 ## 简体中文
 
-这是 SuperZip v0.4.3 / Build46 的 macOS 测试版，适用于 Apple Silicon。请保留原文件。
+这是 SuperZip v0.4.3 / Build47 的 macOS 测试版，适用于 Apple Silicon。请保留原文件。
+
+### 更新检查
+
+应用菜单新增“检查更新…”和“自动检查更新”。自动检查每天最多一次，可关闭；处理文件时延后提示。有新版时显示版本说明并打开 GitHub 上的完整安装包。下载后退出应用，将新应用拖到“应用程序”并替换。离线或查询失败时，文件处理不受影响。
 
 ### 功能
 
@@ -18,7 +22,7 @@
 
 仅提供 **Apple Silicon（M 系列）** 版本。构建最低系统目标为 **macOS 12**；当前实测环境为 **Apple M1、8 GB、macOS 26.2**，较旧系统尚未逐版本验收。Intel Mac 暂不支持。Windows 测试版预计约一周后上线，发布前会完成 Windows 实机验证；本次发行仅提供 macOS 版本。
 
-打开 `SuperZip-0.4.3-build46-macOS-arm64.dmg`，将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载并解开同名 ZIP，将完整的应用移到“应用程序”。不要只复制应用内部的文件。
+打开 `SuperZip-0.4.3-build47-macOS-arm64.dmg`，将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载并解开同名 ZIP，将完整的应用移到“应用程序”。不要只复制应用内部的文件。
 
 本测试版使用本地签名，**尚未通过 Apple 公证**。确认下载来自本项目后，若首次打开提示 Apple 无法验证：
 
@@ -42,9 +46,13 @@ SuperZip 自有核心、压缩策略与界面保持闭源。7-Zip 26.03 的完�
 
 ## English
 
-This is the macOS beta of SuperZip v0.4.3 / Build46 for Apple Silicon. Keep your original files.
+This is the macOS beta of SuperZip v0.4.3 / Build47 for Apple Silicon. Keep your original files.
 
 The Windows beta is expected in about a week, after testing on Windows hardware. This release only includes the macOS build.
+
+### Update checks
+
+The app menu now includes manual and automatic update checks. Automatic checks run at most once a day and can be disabled. Prompts wait until file processing is idle. Available updates show release notes and link to a full installer hosted on GitHub. Quit the app, then drag the new copy to Applications and replace the previous one. Offline or failed checks do not affect file processing.
 
 ### Features
 
@@ -58,7 +66,7 @@ The Windows beta is expected in about a week, after testing on Windows hardware.
 
 This build is for **Apple Silicon (M-series)** Macs. The deployment target is **macOS 12**. Testing so far uses an **Apple M1 with 8 GB of RAM on macOS 26.2**; older macOS versions have not been individually verified. Intel Macs are not supported.
 
-Open `SuperZip-0.4.3-build46-macOS-arm64.dmg` and drag `SuperZip.app` to Applications in the window. You can also extract the ZIP with the same name and move the complete app to Applications. Do not copy only the files inside the app bundle.
+Open `SuperZip-0.4.3-build47-macOS-arm64.dmg` and drag `SuperZip.app` to Applications in the window. You can also extract the ZIP with the same name and move the complete app to Applications. Do not copy only the files inside the app bundle.
 
 This beta is locally signed and **has not been notarized by Apple**. After confirming that the download came from this project, if macOS says Apple cannot verify it:
 
@@ -79,3 +87,5 @@ Permissions, timestamps, and other metadata are not restored. Links, special fil
 ### Third-party components
 
 SuperZip's own core, compression strategies, and interface are closed source. The complete corresponding 7-Zip 26.03 source, licenses, rebuild instructions, and library replacement instructions are bundled with the app under **App menu → Third-party licenses**. Third-party components retain the rights granted by their respective licenses.
+
+<!-- superzip-update: {"schema":1,"minimum_macos":"12.0"} -->

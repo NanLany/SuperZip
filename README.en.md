@@ -7,7 +7,7 @@
 <p align="center">A free, fast compression tool.</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build46"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build47"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#download"><img src="assets/badges/windows.svg" alt="Windows · Not released"></a>
   <a href="RELEASE-NOTES.md#english"><img src="assets/badges/status.svg" alt="Beta"></a>
@@ -33,7 +33,7 @@ This repository provides downloads, documentation, and issue tracking. SuperZip'
 
 | Platform | Status | Download |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build46 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| macOS · Apple Silicon | v0.4.3 · Build47 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
 | Windows | Expected in about a week | In preparation |
 
 The macOS build is for M-series Macs; Intel Macs are not supported. Its deployment target is macOS 12. Testing so far uses an Apple M1 with 8 GB of RAM on macOS 26.2; older macOS releases have not been individually verified.
@@ -45,6 +45,12 @@ The macOS build is for M-series Macs; Intel Macs are not supported. Its deployme
 3. Go to **System Settings → Privacy & Security → Security → Open Anyway** and follow the prompts.
 
 This beta is locally signed and has not been notarized by Apple. You do not need to disable macOS security protections or grant Full Disk Access.
+
+## Updates
+
+Choose **Check for updates…** from the app menu. Automatic checks are enabled by default, run at most once a day, and can be disabled in the same menu. When an update is available, SuperZip shows release notes and a full installer download. Quit SuperZip, then drag the new app to Applications and replace the old copy.
+
+Update information and installers are hosted on GitHub; no account is needed. Compression and extraction continue to work offline.
 
 ## Features
 
@@ -67,7 +73,7 @@ SuperZip's default mode on an everyday project folder containing **4.147 GB acro
 
 These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files.
 
-[Download data preview (HTML)](https://github.com/NanLany/SuperZip/releases/download/untagged-5d8c02b10cfb82c8eac1/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
+[Download data preview (HTML)](https://github.com/NanLany/SuperZip/releases/download/untagged-98937f0c841fd5b0a29c/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
 
 Open the downloaded `data-preview.html` in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
 
