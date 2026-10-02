@@ -7,7 +7,7 @@
 <p align="center">A free, fast compression tool.</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build48"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#download"><img src="assets/badges/windows.svg" alt="Windows · Not released"></a>
   <a href="RELEASE-NOTES.md#english"><img src="assets/badges/status.svg" alt="Beta"></a>
@@ -23,18 +23,18 @@
   <a href="https://github.com/NanLany/SuperZip/issues">Report an issue</a>
 </p>
 
-SuperZip creates `.szp` archives and extracts ZIP, 7z, and RAR. Automatic table optimization is enabled by default and can be turned off. Other files use regular compression.
+SuperZip creates SZP and standard ZIP archives, and extracts ZIP, 7z, and RAR. SZP uses automatic table optimization by default; other files use regular compression. You can turn the optimization off, or choose ZIP when the recipient uses another archive app.
 
 This repository provides downloads, documentation, and issue tracking. SuperZip's own core and interface are closed source.
 
-> **The Windows beta is expected in about a week.** We will test it on Windows hardware before release. Check Releases for the confirmed date.
+> **The Windows build has not been released.** Downloads will follow testing on Windows hardware. Check Releases for progress.
 
 ## Download
 
 | Platform | Status | Download |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build48 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
-| Windows | Expected in about a week | In preparation |
+| macOS · Apple Silicon | v0.4.4 · Build51 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| Windows | Planned, not released | In preparation |
 
 The macOS build is for M-series Macs; Intel Macs are not supported. Its deployment target is macOS 12. Testing so far uses an Apple M1 with 8 GB of RAM on macOS 26.2; older macOS releases have not been individually verified.
 
@@ -56,7 +56,7 @@ System file dialogs use the selected language the next time you open the app.
 
 ## Updates
 
-Choose **Check for updates…** from the app menu. Automatic checks are enabled by default, run at most once a day, and can be disabled in the same menu. When an update is available, SuperZip shows release notes and a full installer download. Quit SuperZip, then drag the new app to Applications and replace the old copy.
+Choose **Check for Updates…** from the app menu. Automatic checks are enabled by default, run at most once a day, and can be disabled in the same menu. When an update is available, SuperZip shows release notes and opens a full installer download in your browser. Quit SuperZip, then drag the new app to Applications and replace the old copy.
 
 Update information and installers are hosted on GitHub; no account is needed. Compression and extraction continue to work offline.
 
@@ -64,12 +64,20 @@ Update information and installers are hosted on GitHub; no account is needed. Co
 
 | Action | Support |
 | :-- | :-- |
-| Compress files and folders | Create `.szp` archives, optimize eligible tables, and reuse duplicate content blocks |
+| Create SZP | Optimize eligible tables by default and reuse duplicate content blocks |
+| Create standard ZIP | Use regular compression that opens in common archive apps |
 | Extract common formats | `.szp`, ZIP, 7z, RAR/RAR5; common password-protected and split archive layouts have been tested |
 | Read legacy Chinese ZIP filenames | Choose GBK or CP437 and preview names before extraction |
-| Finder services | Right-click → Services → SuperZip compression or extraction; one item at a time |
+| Batch processing | Select multiple files or folders, process them in sequence, and save a separate output for each |
+| Finder services | Right-click → Services → SuperZip compression or extraction to send selected items to the app |
 
-**Recipients need SuperZip to extract `.szp`.** Include this project's download link when sharing an archive. This version does not create ZIP, 7z, or RAR files.
+**Recipients need SuperZip to extract `.szp`.** Include this project's download link when sharing SZP archives. This version creates SZP and ZIP, but does not create 7z or RAR. ZIP output does not support table optimization, encryption, or split creation.
+
+## How to use
+
+Choose Compress or Extract in the main window, add your files, and check the options before starting. You can select up to 256 items. For multiple items, choose one destination folder; SuperZip processes them in sequence. Each selected item gets its own archive or extraction folder. Numbered names resolve conflicts without overwriting existing files.
+
+If one item fails, processing continues with the next. **Skip This Item** in a password or filename-preview prompt skips only the current item. The main window's **Cancel** stops the active item and all pending items while keeping completed results.
 
 ## Benchmarks
 
@@ -79,11 +87,11 @@ SuperZip's default mode on an everyday project folder containing **4.147 GB acro
 | :-- | :-- | :-- |
 | **2.543 GB** | **24.445 s** | **6.817 s** |
 
-These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files.
+These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files. These earlier SZP default-mode measurements do not include this release's new ZIP output.
 
 [View data preview](https://nanlany.github.io/SuperZip/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
 
-You can also [download the HTML](https://github.com/NanLany/SuperZip/releases/download/v0.4.3/data-preview.html) and open `data-preview.html` in Safari, Chrome, or another browser to view all charts offline.
+You can also [download the HTML](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/data-preview.html) and open `data-preview.html` in Safari, Chrome, or another browser to view all charts offline.
 
 ## Before using
 

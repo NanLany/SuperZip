@@ -1,5 +1,75 @@
 <p><a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
 
+# SuperZip v0.4.4 · Build51
+
+## 简体中文
+
+本次在 v0.4.3 / Build48 基础上增加 ZIP 输出和批量处理。这是 Apple Silicon macOS 测试版。
+
+### 新增与改进
+
+- 主窗口统一提供压缩、解压、文件选择和格式设置，开始前可确认项目与选项。
+- 新增标准 ZIP 输出，可用常见压缩工具解压；不支持表格优化、加密或分卷。SZP 保留默认表格优化与重复内容块复用。
+- 一次最多选择 256 个项目，逐项处理，每项单独保存。批量只需选择一个保存文件夹；重名时添加编号，不覆盖已有文件。
+- 失败后继续下一项。密码或文件名预览中的“跳过此项目”只跳过当前项；主窗口“取消”停止当前与待处理项目，保留已完成结果。
+
+### 修复
+
+修复批次运行或密码、预览、保存对话框打开时无法正常退出的问题。菜单退出、Command-Q 和关闭窗口会结束未完成任务、清理临时结果，保留已完成结果。
+
+### 延续功能
+
+沿用 Build48 的中英界面和 GitHub 更新检查。系统首选语言为中文（含繁体）时显示简体中文，否则英文；手动选择会保存，界面立即切换，系统文件对话框下次启动生效。更新通过浏览器下载完整安装包，需退出后替换应用。
+
+SZP 引擎和原有实测数据未变；本次没有新增性能测量，图表不包含 ZIP 输出。
+
+### 安装与限制
+
+下载 `SuperZip-0.4.4-build51-macOS-arm64.dmg`，将 `SuperZip.app` 拖到“应用程序”；也提供同名 ZIP。最低构建目标为 macOS 12，当前测试为 M1、macOS 26.2；旧系统及另一台全新 Mac 的首次授权尚未验证。Intel 不支持，Windows 等待实机验证后发布。
+
+本版本地签名，未通过 Apple 公证。首次打开可在“系统设置 → 隐私与安全性 → 仍要打开”确认。
+
+SZP 需要 SuperZip 解压；不创建 7z/RAR，不还原权限或时间戳，不支持链接、特殊文件、自解压包或同包内逐文件设密码。分卷须放在同一文件夹，请保留原文件。自有实现闭源；7-Zip 26.03 对应源码、许可及替换说明随应用提供。
+
+[完整使用说明](https://github.com/NanLany/SuperZip#readme) · [反馈问题](https://github.com/NanLany/SuperZip/issues)
+
+## English
+
+This Apple Silicon macOS beta adds ZIP output and batch processing to v0.4.3 / Build48.
+
+### Added and improved
+
+- The main window groups compression, extraction, file selection and format settings. Check items and options before starting.
+- Standard ZIP output opens in common archive apps, without table optimization, encryption or split creation. SZP retains table optimization and duplicate block reuse.
+- Select up to 256 items for sequential processing, each with its own output. Choose one destination folder; numbered names avoid overwriting files.
+- Processing continues after a failure. “Skip This Item” in password or filename preview prompts skips that item. “Cancel” in the main window stops active and pending items, keeping completed results.
+
+### Fixed
+
+Fixed quitting during a batch or an open password, preview or save dialog. Menu Quit, Command-Q and window close end unfinished tasks and remove temporary output while keeping completed results.
+
+### Retained features
+
+Build48's Chinese/English interface and GitHub update checks remain. A Chinese first system language uses Simplified Chinese; others use English. Manual choices are saved and switch the UI immediately; native file dialogs change next launch. Updates download a full installer in your browser; quit before replacing the app.
+
+The SZP engine and earlier measurements are unchanged. No new benchmarks were run; charts exclude ZIP output.
+
+### Installation and limits
+
+Open `SuperZip-0.4.4-build51-macOS-arm64.dmg` and drag `SuperZip.app` to Applications; a ZIP is also available. Minimum target: macOS 12. Tested on M1/macOS 26.2; older systems and first launch on another Mac are unverified. Intel is unsupported; Windows awaits hardware testing.
+
+Locally signed, not notarized by Apple. For first launch, use **System Settings → Privacy & Security → Open Anyway**.
+
+SZP requires SuperZip. No 7z/RAR creation, permission or timestamp restoration, links, special files, self-extracting archives or per-file passwords. Keep split parts together and retain originals. SuperZip's own code is closed source; corresponding 7-Zip 26.03 source, licenses and replacement instructions are bundled.
+
+[Full English guide](https://github.com/NanLany/SuperZip/blob/main/README.en.md) · [Report issues](https://github.com/NanLany/SuperZip/issues)
+
+## 历史版本 / Previous releases
+
+以下保留原发布说明，仅适用于对应旧版本。 / Original release notes below apply to their respective older version.
+
+<p><a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
+
 # SuperZip v0.4.3 · Build48
 
 ## 简体中文

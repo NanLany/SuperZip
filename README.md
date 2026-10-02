@@ -7,7 +7,7 @@
 <p align="center">免费的极速压缩工具。</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build48"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#下载"><img src="assets/badges/windows.svg" alt="Windows · 尚未发布"></a>
   <a href="RELEASE-NOTES.md"><img src="assets/badges/status.svg" alt="Beta"></a>
@@ -23,18 +23,18 @@
   <a href="https://github.com/NanLany/SuperZip/issues">问题反馈</a>
 </p>
 
-SuperZip 创建 `.szp` 压缩包，也能解压 ZIP、7z 和 RAR。默认按文件内容识别适用表格并尝试优化，其余文件使用普通压缩；可关闭“自动优化表格”。
+SuperZip 创建 SZP 和标准 ZIP 压缩包，也能解压 ZIP、7z 和 RAR。SZP 默认按文件内容识别适用表格并尝试优化，其余文件使用普通压缩；可关闭“自动优化表格”。需要用其他压缩工具打开时，可选择 ZIP。
 
 本仓库用于发布下载、维护文档和收集问题反馈。SuperZip 自有核心与界面闭源。
 
-> **Windows 测试版预计约一周后上线。** 发布前会完成 Windows 实机验证，具体时间以 Releases 公告为准。
+> **Windows 版本尚未发布。** 完成 Windows 实机验证后提供下载，发布进度以 Releases 公告为准。
 
 ## 下载
 
 | 平台 | 当前状态 | 下载 |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build48 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
-| Windows | 预计约一周后上线 | 准备中 |
+| macOS · Apple Silicon | v0.4.4 · Build51 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| Windows | 计划中，尚未发布 | 准备中 |
 
 macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 macOS 12，当前实测环境为 Apple M1、8 GB、macOS 26.2；较旧系统尚未逐版本验证。
 
@@ -56,7 +56,7 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 ## 更新
 
-在应用菜单中选择 **检查更新…**。自动检查默认开启，每天最多一次，可在同一菜单中关闭。有新版时会显示版本说明并提供完整安装包下载；下载后退出 SuperZip，将新应用拖到“应用程序”并替换。
+在应用菜单中选择 **检查更新…**。自动检查默认开启，每天最多一次，可在同一菜单中关闭。有新版时会显示版本说明，通过浏览器下载完整安装包；下载后退出 SuperZip，将新应用拖到“应用程序”并替换。
 
 更新信息和安装包托管在 GitHub，不需要登录账号。网络不可用时，压缩和解压仍可正常使用。
 
@@ -64,12 +64,20 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 | 操作 | 支持范围 |
 | :-- | :-- |
-| 压缩文件与文件夹 | 创建 `.szp`，尝试优化适用表格，并复用重复内容块 |
+| 创建 SZP | 默认尝试优化适用表格，并复用重复内容块 |
+| 创建标准 ZIP | 使用普通压缩，可由常见压缩工具解压 |
 | 解压常用格式 | `.szp`、ZIP、7z、RAR／RAR5；常见密码包和分卷布局已验证 |
 | 处理旧中文 ZIP | 可选 GBK 或 CP437，并在解压前预览文件名 |
-| Finder 服务 | 右键 → 服务 → SuperZip 压缩或解压；每次选择一个项目 |
+| 批量处理 | 一次选择多个文件或文件夹，逐项处理，每个项目单独保存 |
+| Finder 服务 | 右键 → 服务 → SuperZip 压缩或解压，将所选项目交给应用 |
 
-**`.szp` 需要 SuperZip 解压。** 分享压缩包时，请把本项目的下载入口一并发给接收方。当前版本不创建 ZIP、7z 或 RAR。
+**`.szp` 需要 SuperZip 解压。** 分享 SZP 压缩包时，请把本项目的下载入口一并发给接收方。当前版本可创建 SZP 和 ZIP，不创建 7z 或 RAR；ZIP 输出不支持表格优化、加密或分卷。
+
+## 操作方式
+
+先在主窗口选择压缩或解压，再添加文件并确认选项。一次最多选择 256 个项目；选择多个项目时，只需指定一个保存文件夹，应用会按顺序为每个项目生成独立结果，不会合成一个压缩包。遇到重名会添加编号，已有文件不会被覆盖。
+
+单个项目失败后会继续处理下一项。在密码或文件名预览提示中选择 **跳过此项目**，只跳过当前项目；主窗口的 **取消** 会停止当前项目和所有待处理项目，已经完成的结果保留。
 
 ## 性能实测
 
@@ -79,11 +87,11 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 | :-- | :-- | :-- |
 | **2.543 GB** | **24.445 秒** | **6.817 秒** |
 
-以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数。耗时包含文件扫描与自动判断；文件内容不同，压缩收益也会不同。
+以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数。耗时包含文件扫描与自动判断；文件内容不同，压缩收益也会不同。这些数据沿用此前的 SZP 默认模式实测，不包含本版新增的 ZIP 输出。
 
 [在线数据预览](https://nanlany.github.io/SuperZip/data-preview.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
 
-也可[下载 HTML](https://github.com/NanLany/SuperZip/releases/download/v0.4.3/data-preview.html)，用 Safari、Chrome 或其他浏览器打开 `data-preview.html`，离线查看全部图表。
+也可[下载 HTML](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/data-preview.html)，用 Safari、Chrome 或其他浏览器打开 `data-preview.html`，离线查看全部图表。
 
 ## 使用前了解
 
