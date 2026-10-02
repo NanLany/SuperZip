@@ -7,7 +7,7 @@
 <p align="center">免费的极速压缩工具。</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build47"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.3 · Build48"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#下载"><img src="assets/badges/windows.svg" alt="Windows · 尚未发布"></a>
   <a href="RELEASE-NOTES.md"><img src="assets/badges/status.svg" alt="Beta"></a>
@@ -33,7 +33,7 @@ SuperZip 创建 `.szp` 压缩包，也能解压 ZIP、7z 和 RAR。默认按文�
 
 | 平台 | 当前状态 | 下载 |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.3 · Build47 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| macOS · Apple Silicon | v0.4.3 · Build48 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
 | Windows | 预计约一周后上线 | 准备中 |
 
 macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 macOS 12，当前实测环境为 Apple M1、8 GB、macOS 26.2；较旧系统尚未逐版本验证。
@@ -45,6 +45,14 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 3. 打开 **系统设置 → 隐私与安全性 → 安全性 → 仍要打开**，按系统提示确认。
 
 本测试版采用本地签名，尚未经过 Apple 公证。无需关闭系统安全保护，也不要求完全磁盘访问权限。
+
+## 语言
+
+界面支持简体中文和英文。默认跟随系统首选语言：中文（含繁体中文）显示简体中文，其他语言显示英文。
+
+在 **SuperZip → 语言** 中选择 **跟随系统**、**简体中文**或 **English**。手动选择优先于系统语言，重启后仍会保留；切换后界面和菜单立即更新。
+
+系统文件对话框在下次打开应用时采用所选语言。
 
 ## 更新
 
@@ -73,7 +81,7 @@ macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 mac
 
 以上为 Apple M1、8 GB、macOS 26.2 上的五次中位数。耗时包含文件扫描与自动判断；文件内容不同，压缩收益也会不同。
 
-[下载数据预览（HTML）](https://github.com/NanLany/SuperZip/releases/download/untagged-98937f0c841fd5b0a29c/data-preview.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
+[下载数据预览（HTML）](https://github.com/NanLany/SuperZip/releases/download/untagged-28373c57867a31b0ca90/data-preview.html) — 28 组数据，比较常用软件默认模式下的大小、压缩时间与解压时间。图表内可切换中文／English。
 
 下载 `data-preview.html` 后，用 Safari、Chrome 或其他浏览器打开即可，无需联网。若双击打开了编辑器，请右键 → 打开方式 → 选择浏览器。仓库公开后，会提供直接浏览的在线页面。
 

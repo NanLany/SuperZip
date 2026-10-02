@@ -1,14 +1,22 @@
 <p><a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
 
-# SuperZip v0.4.3 · Build47
+# SuperZip v0.4.3 · Build48
 
 ## 简体中文
 
-这是 SuperZip v0.4.3 / Build47 的 macOS 测试版，适用于 Apple Silicon。请保留原文件。
+这是 SuperZip v0.4.3 / Build48 的 macOS 测试版，适用于 Apple Silicon。请保留原文件。
+
+### 界面语言
+
+Build48 新增简体中文和英文界面，覆盖菜单、操作状态、提示与更新检查。默认跟随系统首选语言：中文（含繁体中文）显示简体中文，其他语言显示英文。
+
+在“SuperZip → 语言”中选择“跟随系统”“简体中文”或“English”。手动选择优先于系统语言并在重启后保留；界面和菜单立即切换。压缩引擎未变，数据预览仍使用此前的实测结果。
+
+系统文件对话框在下次打开应用时采用所选语言。
 
 ### 更新检查
 
-应用菜单新增“检查更新…”和“自动检查更新”。自动检查每天最多一次，可关闭；处理文件时延后提示。有新版时显示版本说明并打开 GitHub 上的完整安装包。下载后退出应用，将新应用拖到“应用程序”并替换。离线或查询失败时，文件处理不受影响。
+应用菜单提供“检查更新…”和“自动检查更新”。自动检查每天最多一次，可关闭；处理文件时延后提示。有新版时显示版本说明并打开 GitHub 上的完整安装包。下载后退出应用，将新应用拖到“应用程序”并替换。离线或查询失败时，文件处理不受影响。
 
 ### 功能
 
@@ -22,7 +30,7 @@
 
 仅提供 **Apple Silicon（M 系列）** 版本。构建最低系统目标为 **macOS 12**；当前实测环境为 **Apple M1、8 GB、macOS 26.2**，较旧系统尚未逐版本验收。Intel Mac 暂不支持。Windows 测试版预计约一周后上线，发布前会完成 Windows 实机验证；本次发行仅提供 macOS 版本。
 
-打开 `SuperZip-0.4.3-build47-macOS-arm64.dmg`，将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载并解开同名 ZIP，将完整的应用移到“应用程序”。不要只复制应用内部的文件。
+打开 `SuperZip-0.4.3-build48-macOS-arm64.dmg`，将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载并解开同名 ZIP，将完整的应用移到“应用程序”。不要只复制应用内部的文件。
 
 本测试版使用本地签名，**尚未通过 Apple 公证**。确认下载来自本项目后，若首次打开提示 Apple 无法验证：
 
@@ -46,13 +54,21 @@ SuperZip 自有核心、压缩策略与界面保持闭源。7-Zip 26.03 的完�
 
 ## English
 
-This is the macOS beta of SuperZip v0.4.3 / Build47 for Apple Silicon. Keep your original files.
+This is the macOS beta of SuperZip v0.4.3 / Build48 for Apple Silicon. Keep your original files.
 
 The Windows beta is expected in about a week, after testing on Windows hardware. This release only includes the macOS build.
 
+### Interface language
+
+Build48 adds Simplified Chinese and English across the interface, menus, operation status, dialogs, and update checks. It follows your system's first preferred language by default: Chinese, including Traditional Chinese, uses Simplified Chinese; all other languages use English.
+
+Choose **SuperZip → Language**, then **Follow System**, **简体中文**, or **English**. Manual selections take precedence over the system language, persist across launches, and update the interface and menus immediately. The compression engine is unchanged; the data preview retains the earlier measurements.
+
+System file dialogs use the selected language the next time you open the app.
+
 ### Update checks
 
-The app menu now includes manual and automatic update checks. Automatic checks run at most once a day and can be disabled. Prompts wait until file processing is idle. Available updates show release notes and link to a full installer hosted on GitHub. Quit the app, then drag the new copy to Applications and replace the previous one. Offline or failed checks do not affect file processing.
+The app menu includes manual and automatic update checks. Automatic checks run at most once a day and can be disabled. Prompts wait until file processing is idle. Available updates show release notes and link to a full installer hosted on GitHub. Quit the app, then drag the new copy to Applications and replace the previous one. Offline or failed checks do not affect file processing.
 
 ### Features
 
@@ -66,7 +82,7 @@ The app menu now includes manual and automatic update checks. Automatic checks r
 
 This build is for **Apple Silicon (M-series)** Macs. The deployment target is **macOS 12**. Testing so far uses an **Apple M1 with 8 GB of RAM on macOS 26.2**; older macOS versions have not been individually verified. Intel Macs are not supported.
 
-Open `SuperZip-0.4.3-build47-macOS-arm64.dmg` and drag `SuperZip.app` to Applications in the window. You can also extract the ZIP with the same name and move the complete app to Applications. Do not copy only the files inside the app bundle.
+Open `SuperZip-0.4.3-build48-macOS-arm64.dmg` and drag `SuperZip.app` to Applications in the window. You can also extract the ZIP with the same name and move the complete app to Applications. Do not copy only the files inside the app bundle.
 
 This beta is locally signed and **has not been notarized by Apple**. After confirming that the download came from this project, if macOS says Apple cannot verify it:
 
