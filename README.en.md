@@ -81,9 +81,9 @@ SuperZip's default mode on an everyday project folder containing **4.147 GB acro
 
 These are medians of five runs on an Apple M1, 8 GB of RAM, and macOS 26.2. Timings include file scanning and automatic detection. Results depend on the contents of your files.
 
-[Data preview (HTML)](https://github.com/NanLany/SuperZip/blob/main/docs/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
+[View data preview](https://nanlany.github.io/SuperZip/data-preview.html) — 28 datasets, comparing archive size, compression time, and extraction time under common tools' default settings. The charts have a Chinese/English switch.
 
-On the file page, click **Download raw file** in the upper-right corner to download `data-preview.html`, then open it in Safari, Chrome, or another browser; it works offline. If double-clicking opens a text editor, right-click the file and choose **Open With → your browser**. A direct online page will be available once the repository is public.
+You can also [download the HTML](https://github.com/NanLany/SuperZip/releases/download/v0.4.3/data-preview.html) and open `data-preview.html` in Safari, Chrome, or another browser to view all charts offline.
 
 ## Before using
 
