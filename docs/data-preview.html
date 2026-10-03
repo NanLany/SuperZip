@@ -706,13 +706,15 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
   .preview-foot { padding-block: 20px 0; font-size: 8px; }
   * { animation: none !important; transition: none !important; }
 }
+
+/* The approved symbol is embedded in the standalone report. */
 .brand .brand-icon { display:block; width:40px; height:40px; flex:0 0 40px; }
 @media(max-width:660px){.brand .brand-icon{width:36px;height:36px;flex-basis:36px}}
 </style>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="SuperZip"><svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" aria-hidden="true"><rect x="32" y="32" width="448" height="448" rx="106" fill="#2855d9"/><path d="M408 104C277 106 183 152 142 228H250L104 402C237 400 332 354 374 278H264Z" fill="#fff"/></svg>SuperZip<small>0.4.3</small></a>
+    <a class="brand" href="#top" aria-label="SuperZip"><svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" aria-hidden="true"><rect x="32" y="32" width="448" height="448" rx="106" fill="#2855d9"/><path d="M408 104C277 106 183 152 142 228H250L104 402C237 400 332 354 374 278H264Z" fill="#fff"/></svg>SuperZip<small>v0.4.4 · Build51</small></a>
     <div class="header-actions">
       <nav aria-label="页面导航" data-i18n-aria="navigation">
         <a href="#results" data-i18n="navResults">实测数据</a>
@@ -745,6 +747,8 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
       <div class="meta-cell"><span data-i18n="levels">比较配置</span><strong data-i18n="levelsValue">已确认的默认模式</strong><small data-i18n="levelsFoot">只纳入默认配置产生的成绩</small></div>
       <div class="meta-cell"><span data-i18n="measurement">测量方式</span><strong data-i18n="measurementValue">五次中位数</strong><small data-i18n="measurementFoot">单次补充与缺失项分别标明</small></div>
     </div>
+
+    <p class="view-note" id="reportVersionNote"><strong><span data-i18n="currentRelease">当前版本：</span> <span id="currentRelease">v0.4.4 · Build51</span></strong><br><span data-i18n="reportVersionNote">本页数据来自 v0.4.3 · Build46 的实测；尚未重测当前版本，也不包含 v0.4.4 新增的 ZIP 输出。</span></p>
 
     <section class="section" id="results" aria-labelledby="results-title">
       <p class="section-kicker"><span class="section-number">01</span><span data-i18n="resultsKicker">THE RESULTS</span></p>
@@ -810,7 +814,7 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
       <p class="section-kicker"><span class="section-number">02</span><span data-i18n="methodKicker">THE METHOD</span></p>
       <h2 id="method-title" data-i18n="methodTitle">数值背后的测量口径。</h2>
       <ul>
-        <li data-i18n="methodSize">大小是完整压缩包，MB / GB 使用十进制。只展示已确认的默认模式；默认配置的格式与参数见“软件版本与实际配置”。</li>
+        <li data-i18n="methodSize">大小是完整压缩包，MB / GB 使用十进制。只展示已确认的默认模式；默认配置的格式与参数见“实测版本与实际配置”。</li>
         <li data-i18n="methodClock">压缩时间包含启动、文件扫描、读取、哈希、自动判断、编码和写入。压缩后的还原校验不计入压缩时间。</li>
         <li data-i18n="methodRounds">主体每项五次，取中位数。大文件对照及日常项目文件夹的竞品成绩为单次补充，不作为稳定速度排名。</li>
         <li data-i18n="methodKinds">各软件的实测耗时合并展示。命令行记录进程运行时间；应用记录操作时间，包含自动化调度与完成观察。</li>
@@ -819,7 +823,7 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
         <li data-i18n="methodData">公开数据、开发中使用过的数据、人工构造和本地项目分别标明。全部结果来自同一台 Mac、不同测量批次。</li>
       </ul>
       <details><summary data-i18n="productSummary">SuperZip 自动处理与并行设置</summary><p data-i18n="productNote">SuperZip 默认开启自动表格处理：逐文件判断，命中适用表格时尝试专用编码，其余文件沿用普通处理；选择依据编码后的大小。判断开销已计入压缩时间。</p><div class="matrix-wrap" id="concurrencyTable"></div></details>
-      <details><summary data-i18n="versionsSummary">软件版本与实际配置</summary><p class="hint system-note" data-i18n="systemNote">macOS 归档实用工具是 Mac 自带的压缩和解压应用。本页默认压缩使用 CPGZ（cpio＋gzip）；Finder 右键“压缩”的 ZIP 是另一项操作。</p><div class="matrix-wrap" id="versionTable"></div></details>
+      <details><summary data-i18n="versionsSummary">实测版本与实际配置</summary><p class="hint system-note" data-i18n="systemNote">macOS 归档实用工具是 Mac 自带的压缩和解压应用。本页默认压缩使用 CPGZ（cpio＋gzip）；Finder 右键“压缩”的 ZIP 是另一项操作。</p><div class="matrix-wrap" id="versionTable"></div></details>
     </section>
   </main>
   <footer class="preview-foot"><p data-i18n="footer">SuperZip · 本地实测报告。所有图表数据内嵌，无需网络或服务。</p><p>Apple M1 · 8 GB · macOS 26.2</p></footer>
@@ -878,7 +882,7 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
     overlapDeck:['配置保留原坐标。选择一项可固定数值并作为放大中心。','Configurations keep their original coordinates. Select one to pin its values and set the zoom center.'],
     overviewMetric:['查看指标','Metric'],overviewNote:['软件列保持固定，横向滚动查看完整数值。点击数据集名称回到单项排名；“未测”表示没有对应实测值。','Tool columns stay fixed; scroll horizontally to see all measured values. Select a dataset to return to its rankings. “Not measured” means no matching measurement is available.'],
     methodKicker:['THE METHOD','THE METHOD'],methodTitle:['数值背后的测量口径。','How the numbers were measured.'],
-    methodSize:['大小是完整压缩包，MB / GB 使用十进制。只展示已确认的默认模式；默认配置的格式与参数见“软件版本与实际配置”。','Sizes are complete archives; MB and GB are decimal units. Only verified default modes are shown; their formats and settings are listed under Software versions and settings.'],
+    methodSize:['大小是完整压缩包，MB / GB 使用十进制。只展示已确认的默认模式；默认配置的格式与参数见“实测版本与实际配置”。','Sizes are complete archives; MB and GB are decimal units. Only verified default modes are shown; their formats and settings are listed under Measured versions and actual settings.'],
     methodClock:['压缩时间包含启动、文件扫描、读取、哈希、自动判断、编码和写入。压缩后的还原校验不计入压缩时间。','Compression timing includes startup, scanning, reading, hashing, automatic selection, encoding, and writing. Subsequent restoration validation is outside compression timing.'],
     methodRounds:['主体每项五次，取中位数。大文件对照及日常项目文件夹的竞品成绩为单次补充，不作为稳定速度排名。','Main measurements use the median of five runs. Competitor large-file and everyday-folder results are single-run supplements, not stable speed rankings.'],
     methodKinds:['各软件的实测耗时合并展示。命令行记录进程运行时间；应用记录操作时间，包含自动化调度与完成观察。','Measured times are shown together. Command-line measurements time the process; app measurements time the operation, including dispatch and completion observation.'],
@@ -887,7 +891,9 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
     methodData:['公开数据、开发中使用过的数据、人工构造和本地项目分别标明。全部结果来自同一台 Mac、不同测量批次。','Public data, data used during development, constructed samples, and the local project are identified separately. All results come from one Mac in different batches.'],
     productSummary:['SuperZip 自动处理与并行设置','SuperZip automatic processing and parallelism'],
     productNote:['SuperZip 默认开启自动表格处理：逐文件判断，命中适用表格时尝试专用编码，其余文件沿用普通处理；选择依据编码后的大小。判断开销已计入压缩时间。','SuperZip enables automatic table processing by default. It evaluates each file, tries specialized encoding for eligible tables, and uses ordinary processing for other files. Selection compares encoded sizes. Selection overhead is included in compression timing.'],
-    versionsSummary:['软件版本与实际配置','Software versions and actual settings'],
+    versionsSummary:['实测版本与实际配置','Measured versions and actual settings'],
+    currentRelease:['当前版本：','Current release:'],
+    reportVersionNote:['本页数据来自 v0.4.3 · Build46 的实测；尚未重测当前版本，也不包含 v0.4.4 新增的 ZIP 输出。','These results were measured with v0.4.3 · Build46. The current release has not been benchmarked again, and ZIP output added in v0.4.4 is not included.'],
     footer:['SuperZip · 本地实测报告。所有图表数据内嵌，无需网络或服务。','SuperZip · Local benchmark report. All chart data is embedded; no network or server is required.'],
     sizeTitle:['压缩包大小','Archive size'],compressTitle:['压缩时间','Compression time'],decodeTitle:['解压时间','Extraction time'],
     sizeUnit:['MB · 完整压缩包','MB · Complete archive'],timeUnit:['秒 · 实测中位数或单次值','Seconds · Median or single-run value'],
@@ -899,7 +905,7 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
     noInput:['当前筛选下没有数据集。','No datasets match this filter.'],configuration:['配置','Configuration'],
     rounds:['正式轮数','Formal runs'],validation:['校验与状态','Validation & status'],inputSize:['该批输入 GB','Batch input GB'],
     range:['最小—最大','Min–max'],cpu:['CPU 秒','CPU seconds'],memory:['峰值 MiB','Peak MiB'],
-    product:['软件','Tool'],setting:['实际设置','Actual setting'],version:['版本','Version'],reason:['说明','Note'],timingMethod:['计时方式','Timing method'],
+    product:['软件','Tool'],setting:['实际设置','Actual setting'],version:['实测版本','Measured version'],reason:['说明','Note'],timingMethod:['计时方式','Timing method'],
     processTiming:['命令行进程耗时','Command-line process time'],operationTiming:['应用操作耗时（含调度与观察）','App operation time (including dispatch and observation)'],
     status:['状态','Status'],sameArchive:['同包解压','Same-archive extraction'],publicInput:['公开数据 / 开发中使用','Public data / used in development'],
     newInput:['公开数据 / 独立验证','Public data / validation sample'],synthetic:['人工构造','Constructed sample'],assembled:['拼接样本','Assembled sample'],
@@ -1218,8 +1224,8 @@ summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
   function renderMethod(){
     const m=D.methodology||{};
     const versions=Array.isArray(m.versions)?m.versions:Object.entries(m.versions||{}).map(([product,info])=>({product,...(typeof info==='object'?info:{version:info})}));
-    const cleanConfig=v=>v.product==='SuperZip' ? (state.language==='zh'?'默认自动表格处理':'Automatic table processing by default') : bilingual(v.config||v.configuration||v.setting||v.notes);
-    $('versionTable').innerHTML=table([t('product'),t('version'),t('setting')],versions.map(v=>'<tr><th scope="row">'+esc(productName(v.product||v.name))+'</th><td>'+esc(v.version||'—')+'</td><td>'+esc(cleanConfig(v))+'</td></tr>').join(''));
+    const measuredVersion=v=>(v.version||'—')+(v.build?' · Build'+v.build:'');
+    $('versionTable').innerHTML=table([t('product'),t('version'),t('setting')],versions.map(v=>'<tr><th scope="row">'+esc(productName(v.product||v.name))+'</th><td>'+esc(measuredVersion(v))+'</td><td>'+esc(bilingual(v.config||v.configuration||v.setting||v.notes))+'</td></tr>').join(''));
     const concurrency=Array.isArray(m.concurrency)?m.concurrency:Object.entries(m.concurrency||{}).map(([product,setting])=>({product,setting}));
     $('concurrencyTable').innerHTML=table([t('product'),t('setting')],concurrency.map(v=>'<tr><th scope="row">'+esc(productName(v.product||v.name))+'</th><td>'+esc(bilingual(v.setting||v.notes||v.value))+'</td></tr>').join(''));
   }
