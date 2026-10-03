@@ -7,14 +7,14 @@
 <p align="center">免费的极速压缩工具。</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases/tag/v0.4.4"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#下载"><img src="assets/badges/windows.svg" alt="Windows · 尚未发布"></a>
   <a href="RELEASE-NOTES.md"><img src="assets/badges/status.svg" alt="Beta"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><strong>下载 macOS 测试版</strong></a>
+  <a href="https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg"><strong>下载 macOS DMG</strong></a>
   &nbsp; · &nbsp;
   <a href="#安装">安装说明</a>
   &nbsp; · &nbsp;
@@ -33,14 +33,14 @@ SuperZip 创建 SZP 和标准 ZIP 压缩包，也能解压 ZIP、7z 和 RAR。SZ
 
 | 平台 | 当前状态 | 下载 |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.4 · Build51 测试版 | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| macOS · Apple Silicon | v0.4.4 · Build51 测试版 | [下载 DMG](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg) |
 | Windows | 计划中，尚未发布 | 准备中 |
 
 macOS 版本面向 M 系列 Mac，暂不支持 Intel。最低构建目标为 macOS 12，当前实测环境为 Apple M1、8 GB、macOS 26.2；较旧系统尚未逐版本验证。
 
 ## 安装
 
-1. 在 [Releases](https://github.com/NanLany/SuperZip/releases) 下载 macOS DMG，打开后将 `SuperZip.app` 拖到窗口中的“应用程序”。也可下载 ZIP，解压后将完整的应用拖到“应用程序”。
+1. 下载 [macOS DMG](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg)，打开后将 `SuperZip.app` 拖到窗口中的“应用程序”。
 2. 首次打开若提示 Apple 无法验证，点“完成”。
 3. 打开 **系统设置 → 隐私与安全性 → 安全性 → 仍要打开**，按系统提示确认。
 

@@ -7,14 +7,14 @@
 <p align="center">A free, fast compression tool.</p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
+  <a href="https://github.com/NanLany/SuperZip/releases/tag/v0.4.4"><img src="assets/badges/version.svg" alt="v0.4.4 · Build51"></a>
   <img src="assets/badges/platform.svg" alt="macOS · Apple Silicon">
   <a href="#download"><img src="assets/badges/windows.svg" alt="Windows · Not released"></a>
   <a href="RELEASE-NOTES.md#english"><img src="assets/badges/status.svg" alt="Beta"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/NanLany/SuperZip/releases"><strong>Download for macOS</strong></a>
+  <a href="https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg"><strong>Download macOS DMG</strong></a>
   &nbsp; · &nbsp;
   <a href="#installation">Installation</a>
   &nbsp; · &nbsp;
@@ -33,14 +33,14 @@ This repository provides downloads, documentation, and issue tracking. SuperZip'
 
 | Platform | Status | Download |
 | :-- | :-- | :-- |
-| macOS · Apple Silicon | v0.4.4 · Build51 beta | [Releases](https://github.com/NanLany/SuperZip/releases) · DMG / ZIP |
+| macOS · Apple Silicon | v0.4.4 · Build51 beta | [Download DMG](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg) |
 | Windows | Planned, not released | In preparation |
 
 The macOS build is for M-series Macs; Intel Macs are not supported. Its deployment target is macOS 12. Testing so far uses an Apple M1 with 8 GB of RAM on macOS 26.2; older macOS releases have not been individually verified.
 
 ## Installation
 
-1. Download the macOS DMG from [Releases](https://github.com/NanLany/SuperZip/releases), open it, and drag `SuperZip.app` to Applications in the window. Alternatively, download the ZIP, extract it, and move the complete app to Applications.
+1. Download the [macOS DMG](https://github.com/NanLany/SuperZip/releases/download/v0.4.4/SuperZip-0.4.4-build51-macOS-arm64.dmg), open it, and drag `SuperZip.app` to Applications in the window.
 2. If macOS says Apple cannot verify the app, dismiss the dialog with “Done”.
 3. Go to **System Settings → Privacy & Security → Security → Open Anyway** and follow the prompts.
 
